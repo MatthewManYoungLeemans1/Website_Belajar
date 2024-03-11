@@ -1,7 +1,7 @@
 <?php $__env->startSection('container'); ?>
     <article>
         <h2><?php echo e($post->title); ?></h2>
-        <p>By. Matthew in <?php echo e($post->category->name); ?></p>
+        <p>By. Matthew in <a href="/categories/<?php echo e($post->category->slug); ?>"><?php echo e($post->category->name); ?></a></p>
         <?php echo $post->body; ?>
 
     </article>
