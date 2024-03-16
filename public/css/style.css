@@ -5,3 +5,7 @@ a.navbar-brand {
 /* .container{
     color: cornflowerblue;
 } */
+
+.container a {
+    text-decoration: none;
+}

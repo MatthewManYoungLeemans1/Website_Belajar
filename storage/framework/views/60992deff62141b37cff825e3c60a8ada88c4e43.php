@@ -5,7 +5,7 @@
         <ul>
             <li>
                 <h2>
-                    <a href="/categories/<?php echo e($category->slug); ?>"><?php echo e($category->name); ?></a>
+                    <a href="/categories/<?php echo e($category->slug); ?>" class="text-decoration-none"><?php echo e($category->name); ?></a>
                 </h2>
             </li>
         </ul>
