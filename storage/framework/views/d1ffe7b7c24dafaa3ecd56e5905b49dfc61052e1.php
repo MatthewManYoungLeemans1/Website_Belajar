@@ -8,13 +8,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link <?php echo e($title == 'Home' ? 'active' : ''); ?>" href="/">Home</a>
+                    <a class="nav-link <?php echo e($active === 'home' ? 'active' : ''); ?>" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php echo e($title == 'About' ? 'active' : ''); ?>" href="/about">About</a>
+                    <a class="nav-link <?php echo e($active === 'about' ? 'active' : ''); ?>" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php echo e($title == 'Posts' ? 'active' : ''); ?>" href="/posts">Blog</a>
+                    <a class="nav-link <?php echo e($active === 'posts' ? 'active' : ''); ?>" href="/posts">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?php echo e($active === 'categories' ? 'active' : ''); ?>" href="/categories">Category</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link <?php echo e($active === 'login' ? 'active' : ''); ?>" href="/login"><i
+                            class="bi bi-box-arrow-in-right"></i> Login</a>
                 </li>
             </ul>
             

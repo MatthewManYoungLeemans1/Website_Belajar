@@ -4,7 +4,7 @@
     <?php $__currentLoopData = $posts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
         <article>
             <h2>
-                <a href="/posts/<?php echo e($post->slug); ?>" class="text-decoration-none"><?php echo e($post->title); ?></a>
+                <a href="/posts/<?php echo e($post->slug); ?>"><?php echo e($post->title); ?></a>
             </h2>
             <p><?php echo e($post->excerpt); ?></p>
         </article>
